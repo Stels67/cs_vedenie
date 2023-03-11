@@ -35,5 +35,18 @@ int Fib(int N)
                     else
                         return Fib(N-1)+Fib(N-2);
 }
-for(i=0;i<10;i++)
-    System.Console.WriteLine(Fib(i));
+//for(i=0;i<10;i++)   
+//    System.Console.WriteLine(Fib(i));
+
+Double Power(int a, int b)
+{
+        if (b==0) return 1;
+        else
+            if (b>0)
+                return Power(a,b-1)*a;
+            else
+             return Power(a,b+1)*1/a;
+
+}
+for(i=-10;i!=10;i++)
+    System.Console.WriteLine(Power(2,i));
